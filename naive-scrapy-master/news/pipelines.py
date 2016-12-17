@@ -10,7 +10,7 @@ class NewsPipeline(object):
             #spamwriter = csv.writer(csvfile,dialect='excel')
             #spamwriter.writerow(["标题","链接","摘要","正文","时间"])
     def process_item(self, item, spider):
-        if item['news_title'] != '' and item['news_abstract'] != '' and len(item['news_title']) > 9 :
+        if len(item['news_title'])>5 and len(item['news_abstract'])>10 and len(item['news_body'])>80 and len(item['news_title']) > 9 :
             with open('news.csv', 'ab') as csvfile:
                 spamwriter = csv.writer(csvfile,dialect='excel')
 
@@ -34,5 +34,7 @@ class MongoDBPipeline(object):
         self.collection = db[settings['MONGODB_COLLECTION']]
 
     def process_item(self, item, spider):
-        self.collection.insert(dict(item))
-        return item
+        if len(item['news_title']) > 5 and len(item['news_abstract']) > 10 and len(item['news_body']) > 80 and len(
+                item['news_title']) > 9:
+            self.collection.insert(dict(item))
+            return item
