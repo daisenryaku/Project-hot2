@@ -189,8 +189,8 @@ class newsClassier(Basic):
         
 if __name__=='__main__':
     
-    with open('testnews.txt','r') as f:
-        news=f.read().decode('gbk')
+##    with open('testnews.txt','r') as f:
+##        news=f.read().decode('gbk')
     
     cla=newsClassier(keywords_file='keyword_fc_1.2.pkl',clf_file='clfbest.pkl')
     a=time.time()

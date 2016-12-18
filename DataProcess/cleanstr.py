@@ -5,21 +5,16 @@ import jieba
 
 num2ch={'0':u'零','1':u'一','2':u'二','3':u'三','4':u'四','5':u'五','6':u'六','7':u'七','8':u'八','9':u'九'}
 
-with open('train.txt') as f:
-    text=f.read()
 
-sents=text.split(';')
-sents=[x.strip() for x in sents ]
-#db 数据格式 [(id#,sentence),(id#,sentence)...]
 
-db=[]
+#db=[]
 
-for i in range(len(sents)):
-    db.append((i,sents[i]))
+#for i in range(len(sents)):
+#    db.append((i,sents[i]))
 
 
 
-db=[(x[0],x[1].decode('gbk')) for x in db]
+#db=[(x[0],x[1].decode('gbk')) for x in db]
 
 '''
 去除标定符号
@@ -27,11 +22,11 @@ db=[(x[0],x[1].decode('gbk')) for x in db]
 
 subsym=re.compile(u'[！…，。、：；？【】“》《:‘.,?:!@#{}+*]')
 
-db=[(x[0],subsym.sub(' ',x[1])) for x in db]
+#db=[(x[0],subsym.sub(' ',x[1])) for x in db]
 
-db=[(x[0],x[1].strip()) for x in db]
+#db=[(x[0],x[1].strip()) for x in db]
 
-db=[x for x in db if len(x[1])>5]
+#db=[x for x in db if len(x[1])>5]
 
 '''
 将字符串中的单数字替换成中文
@@ -52,16 +47,16 @@ def processONum(string):
         if len(t[i])==1 and t[i] in num2ch.keys():
             t[i]=num2ch[t[i]]
     return ''.join(t)
-db=[(x[0],processONum(x[1])) for x in db]
+#db=[(x[0],processONum(x[1])) for x in db]
 
 
         
 subbracket=re.compile(r'((?:\(.*?\))|(?:\(.{0,3}$))')
-db=[(x[0],subbracket.sub('',x[1])) for x in db]
+#db=[(x[0],subbracket.sub('',x[1])) for x in db]
 
 
-for each in db:
-    print each[0],each[1]
+#for each in db:
+#    print each[0],each[1]
 
 
 def cleanStr(string):

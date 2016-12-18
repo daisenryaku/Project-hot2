@@ -38,11 +38,10 @@ class CalcFreq(Basic):
 
     def fenci_clac(self):
         word_list=jieba.lcut(self.data)
-        word_set=set(word_list)
-        word_set=word_set-stopwords
+        
         word_dict={}
-        for each in word_set:
-            if len(each)>1 and '.' not in each:
+        for each in word_list:
+            if len(each)>1 and '.' not in each and each not in stopwords:
                 word_dict.setdefault(each,0)
                 word_dict[each]+=1
         self.dict=word_dict

@@ -2,29 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e955f9c-4ac9-45f7-b8ff-3374de265dfb" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/naive-scrapy-master/news/news.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/R_Skeletons.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Skeletons.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/project_hot2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/basic.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/clacnewshot.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/clacwordfreq.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/classifynews.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/cleanstr.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/clfbest.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/keyword_fc_1.2.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/rmSameNews.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataProcess/stopwords.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stopwords.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naive-scrapy-master/news/pipelines.py" afterPath="$PROJECT_DIR$/naive-scrapy-master/news/pipelines.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrepareJson/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrepareJson/basic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrepareJson/words_json.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/processdata.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/naive-scrapy-master/news/news.csv" afterPath="$PROJECT_DIR$/naive-scrapy-master/news/news.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProcess/__init__.py" afterPath="$PROJECT_DIR$/DataProcess/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProcess/basic.py" afterPath="$PROJECT_DIR$/DataProcess/basic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProcess/clacwordfreq.py" afterPath="$PROJECT_DIR$/DataProcess/clacwordfreq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProcess/classifynews.py" afterPath="$PROJECT_DIR$/DataProcess/classifynews.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProcess/cleanstr.py" afterPath="$PROJECT_DIR$/DataProcess/cleanstr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProcess/rmSameNews.py" afterPath="$PROJECT_DIR$/DataProcess/rmSameNews.py" />
     </list>
     <ignored path="project_hot2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +27,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/project_hot2$clacnewshot.coverage" NAME="clacnewshot Coverage Results" MODIFIED="1481974717077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataProcess" />
+    <SUITE FILE_PATH="coverage/project_hot2$words_json.coverage" NAME="words_json Coverage Results" MODIFIED="1482047687699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PrepareJson" />
+    <SUITE FILE_PATH="coverage/project_hot2$clacnewshot.coverage" NAME="clacnewshot Coverage Results" MODIFIED="1481980331153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataProcess" />
+    <SUITE FILE_PATH="coverage/project_hot2$rmSameNews.coverage" NAME="rmSameNews Coverage Results" MODIFIED="1482044252932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataProcess" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -53,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/DataProcess/clacnewshot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="23" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="82" />
               <folding>
                 <element signature="e#16#30#0" expanded="true" />
               </folding>
@@ -61,11 +52,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rmSameNews.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rmSameNews.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcess/rmSameNews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="47" column="150" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="150" />
+              <folding>
+                <element signature="e#16#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="words_json.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PrepareJson/words_json.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+              <folding>
+                <element signature="e#16#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hot_muti_count.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataProcess/hot_muti_count.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
               <folding>
                 <element signature="e#16#30#0" expanded="true" />
               </folding>
@@ -76,9 +91,11 @@
       <file leaf-file-name="cleanstr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcess/cleanstr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+              <folding>
+                <element signature="e#16#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,18 +103,8 @@
       <file leaf-file-name="2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcess/2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/naive-scrapy-master/news/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="453">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,8 +113,8 @@
       <file leaf-file-name="clacwordfreq.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcess/clacwordfreq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding>
                 <element signature="e#16#30#0" expanded="true" />
               </folding>
@@ -118,8 +125,8 @@
       <file leaf-file-name="classifynews.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcess/classifynews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="180" column="51" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
+            <state relative-caret-position="382">
+              <caret line="184" column="104" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -128,8 +135,8 @@
       <file leaf-file-name="basic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataProcess/basic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
-              <caret line="50" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="453">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,12 +150,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DataProcess/classifynews.py" />
-        <option value="$PROJECT_DIR$/DataProcess/basic.py" />
         <option value="$PROJECT_DIR$/DataProcess/clacnewshot.py" />
         <option value="$PROJECT_DIR$/naive-scrapy-master/news/pipelines.py" />
         <option value="$PROJECT_DIR$/DataProcess/removeDup.py" />
+        <option value="$PROJECT_DIR$/DataProcess/basic.py" />
+        <option value="$PROJECT_DIR$/DataProcess/classifynews.py" />
+        <option value="$PROJECT_DIR$/DataProcess/cleanstr.py" />
         <option value="$PROJECT_DIR$/DataProcess/rmSameNews.py" />
+        <option value="$PROJECT_DIR$/DataProcess/clacwordfreq.py" />
+        <option value="$PROJECT_DIR$/DataProcess/hot_muti_count.py" />
+        <option value="$PROJECT_DIR$/PrepareJson/words_json.py" />
       </list>
     </option>
   </component>
@@ -261,6 +272,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="PrepareJson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_hot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_hot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="DataProcess" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -280,7 +305,7 @@
       <recent name="C:\Users\Administrator\Desktop\project_hot2\DataProcess" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.clacnewshot">
+  <component name="RunManager" selected="Python.words_json">
     <configuration default="false" name="clacnewshot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,6 +320,42 @@
       <module name="project_hot2" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataProcess/clacnewshot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rmSameNews" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataProcess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_hot2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataProcess/rmSameNews.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="words_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PrepareJson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project_hot2" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PrepareJson/words_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -509,12 +570,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.clacnewshot" />
+      <item index="1" class="java.lang.String" itemvalue="Python.rmSameNews" />
+      <item index="2" class="java.lang.String" itemvalue="Python.words_json" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.clacnewshot" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.words_json" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rmSameNews" />
+        <item index="2" class="java.lang.String" itemvalue="Python.clacnewshot" />
       </list>
     </recent_temporary>
   </component>
@@ -532,16 +597,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19803064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="The R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -562,77 +627,106 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PrepareJson/words_json.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/naive-scrapy-master/news/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataProcess/2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataProcess/cleanstr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataProcess/classifynews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="180" column="51" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataProcess/basic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="50" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="453">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataProcess/clacwordfreq.py">
+    <entry file="file://$PROJECT_DIR$/naive-scrapy-master/news/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="428">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataProcess/clacnewshot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="23" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="82" />
           <folding>
             <element signature="e#16#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcess/cleanstr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcess/2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataProcess/rmSameNews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="47" column="150" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="150" />
           <folding>
             <element signature="e#16#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcess/clacwordfreq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#16#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcess/classifynews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="184" column="104" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataProcess/hot_muti_count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="e#16#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrepareJson/words_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
