@@ -27,7 +27,7 @@ class CalcNewsHot(Basic):
             if count!=0: #系数衰减
                 count=math.log(count)+1
             hot=news.get('hot',0)
-            self.coll.update_one({"_id": news['_id']}, {'$set': {'hotxcount':count*hot }})
+            self.coll.update_one({"_id": news['_id']}, {'$set': {'hotxcount':count*hot}})
 
 if __name__=='__main__':
     f=CalcNewsHot()

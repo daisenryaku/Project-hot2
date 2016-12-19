@@ -33,7 +33,7 @@ class CalcNewsHot(Basic):
             words=set(jieba.lcut(news['news_title'])) #集合化，去重，重复的只计算一次
             for word in words:
                 hot+=self.word_dict.get(word,0)
-            hot/=math.sqrt(len(words))
+            hot/=(2+math.sqrt(len(words)))
             self.coll.update_one({"_id": news['_id']}, {'$set': {'hot': hot}})
 
 

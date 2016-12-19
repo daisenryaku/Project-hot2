@@ -9,27 +9,14 @@ import  cleanstr
 sys.path.append('../') # 在路径中添加上级目录，方便导入父级目录的settings
 
 from settings import *
-
+from utils import repeatability
 with open('stopwords.dat','r') as f:
     g=f.readlines()
 
 stopwords=set([x.rstrip('\n').decode('utf8') for x in g])
 
-def repeatability(str_1, str_2,threshold):  # 判断语句是否重复，是则返回1
-    list_1 = set(str_1)
-    list_2 = set(str_2)
 
-    a = set(list_1).difference(stopwords)
-    b = set(list_2).difference(stopwords)
 
-    intersection = len(a & b)
-    union = len(a | b)
-
-    if float(intersection) / union > threshold:
-        # print str_1,'----',str_2
-        return 1
-    else:
-        return 0
 
 class Deduplication(Basic):
     def __init__(self, is_last=1, timestamp=None, timetuple=None, collection='news'):
@@ -56,7 +43,7 @@ class Deduplication(Basic):
         total=len(self.data)
         for i in range(total-1):
             for j in range(1,min(search_range,total-i-1)):
-                if repeatability(self.data[i][1],self.data[i+j][1],threshold) and self.data[i][3]!=0 and self.data[i+j][3]!=0:
+                if repeatability(self.data[i][1],self.data[i+j][1],(threshold,1)) and self.data[i][3]!=0 and self.data[i+j][3]!=0:
                     #选择一个长度较短的删除,并将将被删除的新闻的权重转移给另一个新闻
                     if len(self.data[i][2])>len(self.data[i+j][2]):
                         self.data[i][3]+=self.data[i + j][3]
